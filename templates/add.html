@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Build-a-blog</title>
+	</head>
+
+	<style type"text/css">
+		.error {
+			color: red;
+		}
+	</style>
+
+	<body>
+		<h1>Blog</h1>
+		<form method = "post">
+			<h1>Blog Entry</h1>
+			<label>
+				<div>title</div>
+				<input type = "text" name = "title" value = "{{title}}">
+			</label>
+			<label>
+			<div>
+			<h3>Content</h3>
+			</div>
+			<textarea name = "body" value = "{{body}}"></textarea>
+			</label>
+			<div class = "error">{{error}}</div>
+			<input type = "submit">
+		</form>
+	</body>
+</html>
